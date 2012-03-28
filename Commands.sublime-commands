@@ -1,0 +1,44 @@
+[
+    {
+        "caption": "Clipboard: Cut",
+        "command": "cut"
+    },
+    {
+        "caption": "Clipboard: Cut All",
+        "command": "clipboard_commands_cut_all"
+    },
+    {
+        "caption": "Clipboard: Cut Plain Text",
+        "command": "clipboard_commands_cut_plain_text"
+    },
+
+    {
+        "caption": "Clipboard: Copy",
+        "command": "copy"
+    },
+    {
+        "caption": "Clipboard: Copy All",
+        "command": "clipboard_commands_copy_all"
+    },
+    {
+        "caption": "Clipboard: Copy Plain Text",
+        "command": "clipboard_commands_copy_plain_text"
+    },
+
+    {
+        "caption": "Clipboard: Paste",
+        "command": "paste"
+    },
+    {
+        "caption": "Clipboard: Paste In All",
+        "command": "clipboard_commands_paste_in_all"
+    },
+    {
+        "caption": "Clipboard: Paste and Indent",
+        "command": "paste_and_indent"
+    },
+    {
+        "caption": "Clipboard: Paste Plain Text",
+        "command": "clipboard_commands_paste_plain_text"
+    }
+]

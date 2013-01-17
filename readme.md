@@ -1,5 +1,4 @@
-Description
-------------------
+# Description
 
 Clipboard functionality to copy a block of text from PDF and paste it with the new lines and hyphenated words stripped so that it is a clean paste of a block of text into the target area. 
 
@@ -15,7 +14,10 @@ To assign a new keybinding,
 , { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
 ```
 
-Installation
-------------------
+# Installation
 
 Install this repository via "Package Control" http://wbond.net/sublime_packages/package_control
+
+# Source Code
+
+https://github.com/compleatang/sublimetext-pastepdf

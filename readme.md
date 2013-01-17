@@ -3,7 +3,7 @@ Description
 
 Clipboard functionality to copy a block of text from PDF and paste it with the new lines and hyphenated words stripped so that it is a clean paste of a block of text into the target area. 
 
-Given that we do a lot of work between PDFs and Markdown in drafting of documents, it seemed necessary to work on the past functionality a bit. 
+Given that we do a lot of work between PDFs and Markdown in drafting of documents, it seemed necessary to work on the paste functionality a bit. 
 
 To assign a new keybinding,
 
@@ -18,9 +18,4 @@ To assign a new keybinding,
 Installation
 ------------------
 
-<!-- Install this repository via "Package Control" http://wbond.net/sublime_packages/package_control -->
-
-Source-code
-------------------
-
-<!-- https://github.com/SublimeText/ClipboardCommands -->
+Install this repository via "Package Control" http://wbond.net/sublime_packages/package_control

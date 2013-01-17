@@ -1,24 +1,26 @@
 Description
 ------------------
 
-Provides handy clipboard commands without keybindings.
+Clipboard functionality to copy a block of text from PDF and paste it with the new lines and hyphenated words stripped so that it is a clean paste of a block of text into the target area. 
+
+Given that we do a lot of work between PDFs and Markdown in drafting of documents, it seemed necessary to work on the past functionality a bit. 
 
 To assign a new keybinding,
 
-* look for the command name into "Commands.sublime-commands"
+* The relevant command name is "paste_pdf"
 * Open ".../Packages/User/Default.sublime-keymap"
-* Append there, for example for "paste as plain text":
+* Append there:
 
 ```
-, { "keys": ["ctrl+alt+v"], "command": "clipboard_commands_paste_plain_text" }
+, { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
 ```
 
 Installation
 ------------------
 
-Install this repository via "Package Control" http://wbond.net/sublime_packages/package_control
+<!-- Install this repository via "Package Control" http://wbond.net/sublime_packages/package_control -->
 
 Source-code
 ------------------
 
-https://github.com/SublimeText/ClipboardCommands
+<!-- https://github.com/SublimeText/ClipboardCommands -->

@@ -1,0 +1,5 @@
+[
+    {   "caption": "Paste PDF",
+        "command": "paste_pdf"
+    }
+]

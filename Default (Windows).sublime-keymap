@@ -1,3 +1,3 @@
 [
-  { "keys": ["ctrl+super+v"], "command": "paste_pdf" }
+  { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
 ]

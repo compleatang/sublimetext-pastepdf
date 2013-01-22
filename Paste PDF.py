@@ -1,13 +1,10 @@
 # coding=utf8
 import sublime_plugin, sublime, re
 
-def clipboard():
-	return sublime.get_clipboard()
-
 # to transfer cleaned data to sublime text
-def clean_paste(data):
+def clean_paste():
 	# step 1. make smart ticks dumb
-	data = unicode(data)
+	data = unicode(sublime.get_clipboard())
 	data = data.replace(u'”', '"').replace(u'“', '"').replace(u'’', "'")
 	# step 2. replace hr's with new lines
 	data = data.replace('________________________________________', '\n')
@@ -29,5 +26,5 @@ def clean_paste(data):
 
 class PastePdf(sublime_plugin.TextCommand):
 	def run(self, edit):
-		copy(clean_paste(clipboard()))
+		sublime.set_clipboard(clean_paste())
 		self.view.run_command('paste')

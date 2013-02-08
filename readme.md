@@ -42,3 +42,7 @@ The default keybinding is CTRL+ALT+V in Linux and Windows, CTRL+Super+V on OsX. 
 https://github.com/compleatang/sublimetext-pastepdf
 
 MIT License - (c) 2012 - Watershed Legal Services, PLLC
+
+# TODO
+
+* Build a paste with footnote function with cursor inside.

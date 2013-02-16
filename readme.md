@@ -45,4 +45,4 @@ MIT License - (c) 2012 - Watershed Legal Services, PLLC
 
 # TODO
 
-* Build a paste with footnote function with cursor inside.
+* Build a paste with footnote function in pandoc format with cursor inside.

@@ -36,7 +36,7 @@ The default keybinding is CTRL+ALT+V in Linux and Windows, CTRL+Super+V on OsX. 
 * The relevant command name is "paste_pdf"
 
 ```
-, { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
+  { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
 ```
 
 ## Paste PDF Text Block with Pandoc Footnote

@@ -20,6 +20,40 @@ def clean_paste():
 	#         we are within a few characters of a previous
 	#         end line. Table that for now.
 	data = data.replace('- ', '') 
+
+	# French accents (Gery Casiez)
+	data = data.replace(u'à',u'à')
+	data = data.replace(u'â',u'â') 
+	data = data.replace(u'À',u'À')
+	data = data.replace(u'Â',u'Â')
+
+	data = data.replace(u'é',u'é')
+	data = data.replace(u'è',u'è')
+	data = data.replace(u'ê',u'ê')
+	data = data.replace(u'e¨',u'ë')
+
+	data = data.replace(u'É',u'É')
+	data = data.replace(u'È',u'È')
+	data = data.replace(u'Ê',u'Ê')
+	data = data.replace(u'E¨',u'Ë')
+
+	data = data.replace(u'î',u'î')
+	data = data.replace(u'Î',u'Î')
+	data = data.replace(u'ï',u'ï')
+	data = data.replace(u'Ï',u'Ï')	 
+
+	data = data.replace(u'ô',u'ô')
+	data = data.replace(u'Ô',u'Ô')
+
+	data = data.replace(u'ù',u'ù')
+	data = data.replace(u'Ù',u'Ù')
+	data = data.replace(u'û',u'û')
+	data = data.replace(u'Û',u'Û')		
+
+	data = data.replace(u'œ',u'\oe ') 
+	data = data.replace(u'Ç',u'Ç') 
+	data = data.replace(u'ç',u'ç')
+
 	return data;
 
 # to transfer cleaned data and put in double quotes with a footnote prepared in Pandoc notation.

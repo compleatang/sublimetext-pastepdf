@@ -59,7 +59,7 @@ def clean_paste():
 # to transfer cleaned data and put in double quotes with a footnote prepared in Pandoc notation.
 def pandoc_clean_paste():
 	paste_block = clean_paste()
-	data = "\"" + paste_block + "\"^[]"
+	data = "\"" + paste_block + "\"[^]"
 	return data;
 
 # Paste PDF Function

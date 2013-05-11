@@ -53,6 +53,24 @@ def clean_paste( data ):
 	data = data.replace(u'Ç',u'Ç')
 	data = data.replace(u'ç',u'ç')
 
+    # Spanish accents (Ome Gak)
+    data = data.replace(u'á',u'á')
+    data = data.replace(u'Á',u'Á')
+
+    data = data.replace(u'é',u'é')
+    data = data.replace(u'É',u'É')
+
+    data = data.replace(u'í',u'í')
+    data = data.replace(u'Í',u'Í')
+
+    data = data.replace(u'ó',u'ó')
+    data = data.replace(u'Ó',u'Ó')
+
+    data = data.replace(u'ú',u'ú')
+    data = data.replace(u'Ú',u'Ú')
+    data = data.replace(u'ü',u'ü')
+    data = data.replace(u'Ü',u'Ü')
+
 	return data;
 
 # to transfer cleaned data and put in double quotes with a footnote prepared in Pandoc notation.

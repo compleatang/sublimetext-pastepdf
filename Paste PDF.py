@@ -72,6 +72,9 @@ def clean_paste(data):
     data = data.replace(u'ü', u'ü')
     data = data.replace(u'Ü', u'Ü')
 
+    data = data.replace(u'ñ', u'ñ')
+    data = data.replace(u'Ñ', u'Ñ')
+
     return data
 
 

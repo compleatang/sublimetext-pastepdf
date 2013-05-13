@@ -19,7 +19,7 @@ The default keybinding is CTRL+ALT+V in Linux and Windows, CTRL+Super+V on OsX. 
   { "keys": ["ctrl+alt+v"], "command": "paste_pdf" }
 ```
 
-The function will also correct French accents thanks to the kind help of [Gery Casiez](https://github.com/casiez)) and Spanish accents thanks to [Ome Gak](https://github.com/OmeGak).
+The function will also correct French accents thanks to the kind help of [Gery Casiez](https://github.com/casiez) and Spanish accents thanks to [Ome Gak](https://github.com/OmeGak).
 
 ## Paste PDF Text Block with Pandoc Footnote
 

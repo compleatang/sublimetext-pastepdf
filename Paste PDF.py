@@ -10,27 +10,23 @@ def clean_paste(data):
     data = data.replace('________________________________________', '\n')
     # step 3. clean new lines
     data = data.replace('\n', ' ')
-    # step 4. watch for multiple spaces
-    data = data.replace('    ', ' ')   # 4 spaces
-    data = data.replace('   ', ' ')    # 3 spaces
-    data = data.replace('  ', ' ')     # 2 spaces
-    # step 5. clean previously hyphenated words
-    #         this may need a regex to clean scenario
-    #         where the text is in form ' - ' & ensure
-    #         we are within a few characters of a previous
-    #         end line. Table that for now.
-    data = data.replace('- ', '')
 
     # French accents (Gery Casiez)
     data = data.replace(u'à', u'à')
     data = data.replace(u'â', u'â')
+    data = data.replace(u'aˆ', u'â')
     data = data.replace(u'À', u'À')
     data = data.replace(u'Â', u'Â')
+    data = data.replace(u'`a', u'à')
+    data = data.replace(u'̂a', u'â')
 
     data = data.replace(u'é', u'é')
     data = data.replace(u'è', u'è')
+    data = data.replace(u'`e', u'è')
     data = data.replace(u'ê', u'ê')
+    data = data.replace(u'ˆe', u'ê')
     data = data.replace(u'e¨', u'ë')
+    data = data.replace(u' ́e', u'é')
 
     data = data.replace(u'É', u'É')
     data = data.replace(u'È', u'È')
@@ -43,7 +39,9 @@ def clean_paste(data):
     data = data.replace(u'Ï', u'Ï')
 
     data = data.replace(u'ô', u'ô')
+    data = data.replace(u'̂o', u'ô')
     data = data.replace(u'Ô', u'Ô')
+    data = data.replace(u'oˆ', u'ô')
 
     data = data.replace(u'ù', u'ù')
     data = data.replace(u'Ù', u'Ù')
@@ -74,6 +72,18 @@ def clean_paste(data):
 
     data = data.replace(u'ñ', u'ñ')
     data = data.replace(u'Ñ', u'Ñ')
+
+    # step 4. watch for multiple spaces
+    data = data.replace('    ', ' ')   # 4 spaces
+    data = data.replace('   ', ' ')    # 3 spaces
+    data = data.replace('  ', ' ')     # 2 spaces
+
+    # step 5. clean previously hyphenated words
+    #         this may need a regex to clean scenario
+    #         where the text is in form ' - ' & ensure
+    #         we are within a few characters of a previous
+    #         end line. Table that for now.
+    data = data.replace('- ', '')
 
     return data
 
